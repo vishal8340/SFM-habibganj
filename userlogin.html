@@ -1,0 +1,52 @@
+
+<html lang="en" dir="ltr">
+
+<head>
+<meta charset="utf-8">
+<title>User Login</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="css/style1.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/userlogin.js"></script>
+</head>
+
+<body onload="noBack();" 
+	onunload="">
+	<div class="container" class="card card-register mx-auto mt-5">
+		<header>User</header>
+		<form action="" method="POST">
+			<div class="input-field">
+				<input type="text" id="mobileno" name="mob" required> <label>Mobile
+					No.</label>
+			</div>
+			<div class="btn btn-primary btn-block" onclick="validateMob()">Login</div>
+
+		</form>
+		<span id="mob-error"></span>
+		<div class="auth">Or login with</div>
+		<div class="links">
+			<div class="facebook">
+				<i class="fab fa-facebook-square"><span>Facebook</span></i>
+			</div>
+			<div class="google">
+				<i class="fab fa-google-plus-square"><span>Google</span></i>
+			</div>
+		</div>
+		<div class="signup">
+			Not a member? <a href="#">Signup Now</a>
+		</div>
+	</div>
+</body>
+
+</html>
